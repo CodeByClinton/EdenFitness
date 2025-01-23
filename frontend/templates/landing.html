@@ -1,0 +1,38 @@
+{% load static %}
+<section class="" id="landing">
+  <div class="relative h-screen">
+    <video
+      class="absolute object-cover max-w-full max-h-screen min-w-full min-h-screen"
+      src="{% static 'videos/ef_walkthrough_video_.mp4' %}"
+      loop
+      autoplay
+      muted
+      preload="auto"
+    >
+      Video Not Supported
+    </video>
+    <div class="absolute inset-0">
+      <div class="h-full w-full flex items-center justify-center">
+        <div class="w-0.8 text-anti-flash_white text-center">
+          <h4 class="font-semibold text-fluid-h4 leading-loose">
+            WORK HARDER, GET STRONGER
+          </h4>
+          <h1 class="font-extrabold text-fluid-h1">
+            IT'S
+            <span class="text-aero"> EASY </span>
+            WITH
+            <br />
+            <span class="text-aero drop-shadow-aero-500">EDEN </span>
+            <span class="drop-shadow-anti-flash_white-500">FITNESS</span>
+          </h1>
+          <a href="#contact-us" class="cta-btn">BECOME A MEMBER</a>
+          <img
+            class="vitality-logo"
+            src="{% static 'images/logos/vitality_white.png' %}"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

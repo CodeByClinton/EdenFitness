@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth text-fluid-p">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eden Fitness</title>
+    <link href="{% static 'css/output.css' %}" rel="stylesheet" />
+    <link
+      href="{% static 'images/ef_favicon.ico' %}"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <!-- Fonts Start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts End -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body
+    class="font-poppins text-pretty bg-anti-flash_white dark:bg-jet text-jet dark:text-anti-flash_white text-fluid-p wide:text-fluid-wide-p leading-none"
+  >
+    <div class="flex portrait:flex-col landscape:flex-row portrait:h-screen">
+      <header
+        class="portrait:bg-transparent landscape:dark:bg-jet landscape:bg-anti-flash_white portrait:fixed landscape:sticky top-0 landscape:left-0 z-50 landscape:h-screen portrait:w-full"
+      >
+        {% include 'navigation.html' %}
+      </header>
+      <div class="flex-1">
+        <main class="">
+          <!-- prettier-ignore -->
+          {% include 'landing.html' %}
+          {% include 'facilities.html' %}
+          {% include 'cta.html' %}
+          {% include 'classes.html' %}
+          {% include 'schedule.html' %}
+          {% include 'trainers.html' %}
+          {% include 'partners.html' %}
+          {% include 'contact-us.html' %}
+        </main>
+        <footer class="">{% include 'footer.html' %}</footer>
+      </div>
+    </div>
+    <!-- Scripts Start -->
+    <!-- <script src="{% static 'js/animations.js' %}"></script> -->
+    <!-- <script src="{% static 'js/default-behavior.js' %}"></script> -->
+    <!-- <script src="{% static 'js/navigation.js' %}"></script> -->
+    <!-- <script src="{% static 'js/classes.js' %}"></script> -->
+    <!-- <script src="{% static 'js/schedules.js' %}"></script> -->
+    <!-- <script src="{% static 'js/contact-us.js' %}"></script> -->
+    <!-- <script src="{% static 'js/footer.js' %}"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Scripts End -->
+  </body>
+</html>

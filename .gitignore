@@ -1,0 +1,18 @@
+# Python files
+.venv
+.env
+__pycache__
+
+# Django files
+*.log
+
+# Node.js files
+node_modules/
+
+# IDE files
+.idea
+.vscode/
+
+# Other OS files
+.DS_Store
+Thumbs.db
