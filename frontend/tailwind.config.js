@@ -18,9 +18,9 @@ module.exports = {
 
         "fluid-p": "clamp(1rem, 0.8875rem + 0.5625vw, 1.5625rem)", //16px-25px
         "fluid-h1": "clamp(2.125rem, 0.725rem + 7vw, 9.125rem)", //34px-146px
-        "fluid-h2": "clamp()", //px-px
-        "fluid-h3": "clamp()", //px-px
-        "fluid-h4": "clamp(1rem, 0.5rem + 2.5vw, 3.5rem)", //16px-50px
+        "fluid-h2": "clamp(1rem, 0.5rem + 2.5vw, 3.5rem)", //16px-50px
+        "fluid-h3": "clamp(1.5rem, 1.3rem + 1vw, 2.5rem)", //24px-40px
+        "fluid-h4": "clamp()", //px-px
         "fluid-h5": "clamp()", //px-px
         "fluid-h6": "clamp()", //px-px
 
@@ -28,14 +28,14 @@ module.exports = {
 
         "fluid-wide-p": "clamp(1.5625rem, -1.25rem + 2.3438vw, 2.5rem)", //25px-40px
         "fluid-wide-h2": "clamp()", //px-px
-        "fluid-wide-h3": "clamp()", //px-px
+        "fluid-wide-h3": "clamp(2.5rem, -0.5rem + 2.5vw, 3.5rem)", //40px-56px
         "fluid-wide-h4": "clamp()", //px-px
         "fluid-wide-h5": "clamp()", //px-px
         "fluid-wide-h6": "clamp()", //px-px
       },
       width: {
-        0.8: "80%",
-        "fluid-vitality": "clamp(6.25rem, 4.4643rem + 8.9286vw, 18.75rem)", //120px-320px
+        eighty: "80%",
+        "fluid-120-320": "clamp(6.25rem, 4.4643rem + 8.9286vw, 18.75rem)", //120px-320px
 
         //screen >= 320px <= 1920px:
         //screen >= 1920px <= 2560px:
@@ -43,16 +43,16 @@ module.exports = {
       height: {
         //screen >= 320px <= 1920px:
 
-        "fluid-burger": "clamp(1.25rem, 1rem + 1.25vw, 2.5rem)", //20px-40px
+        "fluid-20-40": "clamp(1.25rem, 1rem + 1.25vw, 2.5rem)", //20px-40px
 
         //screen >= 1920px <= 2560px:
       },
       margin: {
-        "cta-btn": "clamp(0.8125rem, 0.5rem + 1.5625vw, 3rem)", //13px-48px
+        "fluid-13-48": "clamp(0.8125rem, 0.5rem + 1.5625vw, 3rem)", //13px-48px
 
         //screen >= 320px <= 1920px:
 
-        "fluid-burger": "clamp(0.5rem, 0.4rem + 0.5vw, 1rem)", //8px-16px
+        "fluid-8-16": "clamp(0.5rem, 0.4rem + 0.5vw, 1rem)", //8px-16px
         "fluid-16-48": "clamp(1rem, 0.5997rem + 2.0013vw, 3rem)",
         //screen >= 1920px <= 2560px:
       },
@@ -252,7 +252,7 @@ module.exports = {
     plugin(function ({ addComponents, theme }) {
       addComponents({
         ".cta-btn": {
-          margin: theme("margin.cta-btn"),
+          margin: theme("margin.fluid-13-48"),
           display: "inline-block",
           padding: theme("padding.fluid-4-8_8-20"),
           borderRadius: "9999px",
@@ -274,7 +274,7 @@ module.exports = {
         ".vitality-logo": {
           aspectRatio: "auto",
           margin: "0 auto",
-          width: theme("width.fluid-vitality"),
+          width: theme("width.fluid-120-320"),
         },
       });
     }),
