@@ -6,6 +6,11 @@ module.exports = {
   content: ["./templates/**/*.html", "./static/js/**/*.js"],
   theme: {
     screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
       wide: "1920px",
     },
     extend: {
@@ -20,10 +25,12 @@ module.exports = {
         "fluid-h1": "clamp(2.125rem, 0.725rem + 7vw, 9.125rem)", //34px-146px
         "fluid-h2": "clamp(1rem, 0.5rem + 2.5vw, 3.5rem)", //16px-50px
         "fluid-h3": "clamp(1.5rem, 1.3rem + 1vw, 2.5rem)", //24px-40px
-        "fluid-h4": "clamp()", //px-px
+        "fluid-h4": "clamp(0.75rem, 0.45rem + 1.5vw, 2.25rem)", //12px-36px
         "fluid-h5": "clamp()", //px-px
         "fluid-h6": "clamp()", //px-px
-
+        "fluid-10-22": "clamp(0.625rem, 0.475rem + 0.75vw, 1.375rem)",
+        "fluid-12-20": "clamp(0.75rem, 0.65rem + 0.5vw, 1.25rem)",
+        "fluid-12-24": "clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem)",
         //screen >= 1920px <= 2560px:
 
         "fluid-wide-p": "clamp(1.5625rem, -1.25rem + 2.3438vw, 2.5rem)", //25px-40px
@@ -35,46 +42,51 @@ module.exports = {
       },
       width: {
         eighty: "80%",
-        "fluid-120-320": "clamp(6.25rem, 4.4643rem + 8.9286vw, 18.75rem)", //120px-320px
+        "fluid-100-300": "clamp(6.25rem, 4.4643rem + 8.9286vw, 18.75rem)",
 
         //screen >= 320px <= 1920px:
+        "fluid-28-40": "clamp(1.75rem, 1.6rem + 0.75vw, 2.5rem)",
+        "fluid-32-64": "clamp(2rem, 1.6rem + 2vw, 4rem)",
+        "fluid-48-112": "clamp(3rem, 2.2rem + 4vw, 7rem)",
         //screen >= 1920px <= 2560px:
       },
-      height: {
-        //screen >= 320px <= 1920px:
-
-        "fluid-20-40": "clamp(1.25rem, 1rem + 1.25vw, 2.5rem)", //20px-40px
-
-        //screen >= 1920px <= 2560px:
-      },
+      // height: {
+      //   //screen >= 320px <= 1920px:
+      //   //screen >= 1920px <= 2560px:
+      // },
       margin: {
-        "fluid-13-48": "clamp(0.8125rem, 0.5rem + 1.5625vw, 3rem)", //13px-48px
+        "fluid-13-48": "clamp(0.8125rem, 0.5rem + 1.5625vw, 3rem)",
 
         //screen >= 320px <= 1920px:
 
-        "fluid-8-16": "clamp(0.5rem, 0.4rem + 0.5vw, 1rem)", //8px-16px
+        "fluid-8-16": "clamp(0.5rem, 0.4rem + 0.5vw, 1rem)",
         "fluid-16-48": "clamp(1rem, 0.5997rem + 2.0013vw, 3rem)",
         //screen >= 1920px <= 2560px:
       },
       padding: {
         "fluid-4-8_8-20":
-          "clamp(0.25rem, 0.2143rem + 0.1786vw, 0.5rem) clamp(0.5rem, 0.3929rem + 0.5357vw, 1.25rem)", //4px-8px_8px-20px
+          "clamp(0.25rem, 0.2143rem + 0.1786vw, 0.5rem) clamp(0.5rem, 0.3929rem + 0.5357vw, 1.25rem)",
 
         //screen >= 320px <= 1920px:
+        "fluid-8-24": "clamp(0.5rem, 0.3rem + 1vw, 1.5rem)", //INFO: Recheck
         //screen >= 1920px <= 2560px:
       },
-      // borderWidth: {
-      //  //screen >= 320px <= 1920px:
-      //  //screen >= 1920px <= 2560px:
-      // },
-      // borderRadius: {
-      //  //screen >= 320px <= 1920px:
-      //  //screen >= 1920px <= 2560px:
-      // },
-      // gap: {
-      //  //screen >= 320px <= 1920px:
-      //  //screen >= 1920px <= 2560px:
-      // },
+      borderWidth: {
+        //screen >= 320px <= 1920px:
+        "fluid-2-5": "clamp(0.125rem, 0.0875rem + 0.1875vw, 0.3125rem)", //INFO: Recheck
+        //screen >= 1920px <= 2560px:
+      },
+      borderRadius: {
+        //screen >= 320px <= 1920px:
+        "fluid-16-32": "clamp(1rem, 0.8rem + 1vw, 2rem)", //INFO: Recheck
+        //screen >= 1920px <= 2560px:
+      },
+      gap: {
+        //screen >= 320px <= 1920px:
+        "fluid-8-16": "clamp(0.5rem, 0.4rem + 0.5vw, 1rem)", //INFO: Recheck
+        "fluid-16-48": "clamp(1rem, 0.6rem + 2vw, 3rem)", //INFO: was 20-54
+        //screen >= 1920px <= 2560px:
+      },
       colors: {
         aero: {
           DEFAULT: "#00c2df",
@@ -147,6 +159,54 @@ module.exports = {
           700: "rgba(236, 236, 236, 0.7)",
           800: "rgba(236, 236, 236, 0.8)",
           900: "rgba(236, 236, 236, 0.9)",
+        },
+        onyx: {
+          DEFAULT: "#3d3d3d",
+          100: "#0c0c0c",
+          200: "#181818",
+          300: "#252525",
+          400: "#313131",
+          500: "#3d3d3d",
+          600: "#646464",
+          700: "#8b8b8b",
+          800: "#b1b1b1",
+          900: "#d8d8d8",
+        },
+        "onyx-opacity": {
+          DEFAULT: "rgba(61, 61, 61, 1)", // #3d3d3d
+          100: "rgba(61, 61, 61, 0.1)",
+          200: "rgba(61, 61, 61, 0.2)",
+          300: "rgba(61, 61, 61, 0.3)",
+          400: "rgba(61, 61, 61, 0.4)",
+          500: "rgba(61, 61, 61, 0.5)",
+          600: "rgba(61, 61, 61, 0.6)",
+          700: "rgba(61, 61, 61, 0.7)",
+          800: "rgba(61, 61, 61, 0.8)",
+          900: "rgba(61, 61, 61, 0.9)",
+        },
+        outer_space: {
+          DEFAULT: "#474747",
+          100: "#0e0e0e",
+          200: "#1d1d1d",
+          300: "#2b2b2b",
+          400: "#393939",
+          500: "#474747",
+          600: "#6c6c6c",
+          700: "#919191",
+          800: "#b6b6b6",
+          900: "#dadada",
+        },
+        "outer_space-opacity": {
+          DEFAULT: "rgba(71, 71, 71, 1)", // #474747
+          100: "rgba(71, 71, 71, 0.1)",
+          200: "rgba(71, 71, 71, 0.2)",
+          300: "rgba(71, 71, 71, 0.3)",
+          400: "rgba(71, 71, 71, 0.4)",
+          500: "rgba(71, 71, 71, 0.5)",
+          600: "rgba(71, 71, 71, 0.6)",
+          700: "rgba(71, 71, 71, 0.7)",
+          800: "rgba(71, 71, 71, 0.8)",
+          900: "rgba(71, 71, 71, 0.9)",
         },
       },
       boxShadow: {
@@ -274,7 +334,7 @@ module.exports = {
         ".vitality-logo": {
           aspectRatio: "auto",
           margin: "0 auto",
-          width: theme("width.fluid-120-320"),
+          width: theme("width.fluid-100-300"),
         },
       });
     }),
