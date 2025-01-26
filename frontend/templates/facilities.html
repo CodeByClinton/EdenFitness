@@ -1,18 +1,206 @@
 {% load static %}
 <section id="facilities">
-  <div class="w-full flex justify-center my-fluid-16-48">
+  <div class="w-full flex justify-center">
     <div class="w-eighty">
-      <div class="text-center">
-        <h3 class="font-bold text-fluid-h3 wide:text-fluid-wide-h3">OUR <span class="text-aero">FACILITIES</span></h3>
+      <div class="text-center my-fluid-16-48">
+        <h3 class="font-bold text-fluid-h3 wide:text-fluid-wide-h3">
+          OUR <span class="text-aero">FACILITIES</span>
+        </h3>
         <img
-          class="mx-auto w-9 aspect-square"
+          class="mx-auto w-fluid-32-64 aspect-square my-fluid-8-16"
           src="{% static 'images/icons/benji.png' %}"
           alt=""
         />
-        <p>
+        <p
+          class="text-fluid-12-20 leading-tight landscape:inline-block landscape:mx-auto landscape:max-w-[65%]"
+        >
           "Eden Fitness is the manifestation of a dream to bring a world-class
           hybrid fitness facility to the Garden Route."
         </p>
+      </div>
+      <div class="grid landscape:lg:grid-cols-2 gap-fluid-16-48">
+        <article
+          class="grid grid-cols-[auto_1fr] items-start gap-fluid-8-16 rounded-fluid-16-32 border-fluid-2-5 border-solid border-onyx-900 p-fluid-8-24 shadow-lg shadow-onyx-600 dark:border-outer_space dark:bg-onyx dark:shadow-none"
+        >
+          <div class="self-center">
+            <img
+              class="h-auto w-fluid-48-112"
+              src="{% static 'images/icons/facilities/facility_crossfit.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="grid grid-rows-[auto_auto] gap-fluid-8-16">
+            <h4
+              class="text-fluid-h4 font-semibold leading-none text-jet dark:text-anti-flash_white"
+            >
+              CrossFit
+            </h4>
+            <p class="text-justify font-ubuntu text-fluid-12-24 font-light">
+              Our affiliated CrossFit box is kitted out with an 18m Wall Rig,
+              premium Gymway weightlifting equipment and certified CrossFit
+              trainers.
+            </p>
+          </div>
+        </article>
+        <article
+          class="grid grid-cols-[auto_1fr] items-start gap-fluid-8-16 rounded-fluid-16-32 border-fluid-2-5 border-solid border-onyx-900 p-fluid-8-24 shadow-lg shadow-onyx-600 dark:border-outer_space dark:bg-onyx dark:shadow-none"
+        >
+          <div class="self-center">
+            <img
+              class="h-auto w-fluid-48-112"
+              src="{% static 'images/icons/facilities/facility_fastfit.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="grid grid-rows-[auto_auto] gap-fluid-8-16">
+            <h4
+              class="text-fluid-h4 font-semibold leading-none text-jet dark:text-anti-flash_white"
+            >
+              Fast Fit
+            </h4>
+            <p class="text-justify font-ubuntu text-fluid-12-24 font-light">
+              Our premium Kettlbells, Wallballs, GHD’s, rigging, bars and
+              dumbbells are sure to cater to any gym junky’s needs. Take a
+              FastFit class, no holds bared.
+            </p>
+          </div>
+        </article>
+        <article
+          class="grid grid-cols-[auto_1fr] items-start gap-fluid-8-16 rounded-fluid-16-32 border-fluid-2-5 border-solid border-onyx-900 p-fluid-8-24 shadow-lg shadow-onyx-600 dark:border-outer_space dark:bg-onyx dark:shadow-none"
+        >
+          <div class="self-center">
+            <img
+              class="h-auto w-fluid-48-112"
+              src="{% static 'images/icons/facilities/facility_olympic-lifting.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="grid grid-rows-[auto_auto] gap-fluid-8-16">
+            <h4
+              class="text-fluid-h4 font-semibold leading-none text-jet dark:text-anti-flash_white"
+            >
+              Olympic Weightlifting
+            </h4>
+            <p class="text-justify font-ubuntu text-fluid-12-24 font-light">
+              SMAI lifting platforms form the solid base of our Olympic lifting
+              area. With all the essentials, this area is sure to be a meeting
+              place for the professional and novice alike.
+            </p>
+          </div>
+        </article>
+        <article
+          class="grid grid-cols-[auto_1fr] items-start gap-fluid-8-16 rounded-fluid-16-32 border-fluid-2-5 border-solid border-onyx-900 p-fluid-8-24 shadow-lg shadow-onyx-600 dark:border-outer_space dark:bg-onyx dark:shadow-none"
+        >
+          <div class="self-center">
+            <img
+              class="h-auto w-fluid-48-112"
+              src="{% static 'images/icons/facilities/facility_commercial.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="grid grid-rows-[auto_auto] gap-fluid-8-16">
+            <h4
+              class="text-fluid-h4 font-semibold leading-none text-jet dark:text-anti-flash_white"
+            >
+              Commercial
+            </h4>
+            <p class="text-justify font-ubuntu text-fluid-12-24 font-light">
+              Kitted out with the world famous Swedish GT range. This
+              top-of-the-range bio-mechanically minded equipment will not leave
+              you wanting.
+            </p>
+          </div>
+        </article>
+        <article
+          class="grid grid-cols-[auto_1fr] items-start gap-fluid-8-16 rounded-fluid-16-32 border-fluid-2-5 border-solid border-onyx-900 p-fluid-8-24 shadow-lg shadow-onyx-600 dark:border-outer_space dark:bg-onyx dark:shadow-none"
+        >
+          <div class="self-center">
+            <img
+              class="h-auto w-fluid-48-112"
+              src="{% static 'images/icons/facilities/facility_strongman.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="grid grid-rows-[auto_auto] gap-fluid-8-16">
+            <h4
+              class="text-fluid-h4 font-semibold leading-none text-jet dark:text-anti-flash_white"
+            >
+              Strongman
+            </h4>
+            <p class="text-justify font-ubuntu text-fluid-12-24 font-light">
+              The name says it all! Come check out the interesting tools and
+              contraptions we have devised to bring strongman training back into
+              the gym!
+            </p>
+          </div>
+        </article>
+        <article
+          class="grid grid-cols-[auto_1fr] items-start gap-fluid-8-16 rounded-fluid-16-32 border-fluid-2-5 border-solid border-onyx-900 p-fluid-8-24 shadow-lg shadow-onyx-600 dark:border-outer_space dark:bg-onyx dark:shadow-none"
+        >
+          <div class="self-center">
+            <img
+              class="h-auto w-fluid-48-112"
+              src="{% static 'images/icons/facilities/facility_free-weight.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="grid grid-rows-[auto_auto] gap-fluid-8-16">
+            <h4
+              class="text-fluid-h4 font-semibold leading-none text-jet dark:text-anti-flash_white"
+            >
+              Free-Weight
+            </h4>
+            <p class="text-justify font-ubuntu text-fluid-12-24 font-light">
+              Offering a variety of dumbbells (over 50kgs) and barbells for the
+              focused free-weight functionalist. Also, available is the SL range
+              plate-loaded machines and more.
+            </p>
+          </div>
+        </article>
+        <article
+          class="grid grid-cols-[auto_1fr] items-start gap-fluid-8-16 rounded-fluid-16-32 border-fluid-2-5 border-solid border-onyx-900 p-fluid-8-24 shadow-lg shadow-onyx-600 dark:border-outer_space dark:bg-onyx dark:shadow-none"
+        >
+          <div class="self-center">
+            <img
+              class="h-auto w-fluid-48-112"
+              src="{% static 'images/icons/facilities/facility_cardio.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="grid grid-rows-[auto_auto] gap-fluid-8-16">
+            <h4
+              class="text-fluid-h4 font-semibold leading-none text-jet dark:text-anti-flash_white"
+            >
+              Cardio
+            </h4>
+            <p class="text-justify font-ubuntu text-fluid-12-24 font-light">
+              With our world-class Precor Cardio range, there is no better place
+              in South Africa to get your heart pumping.
+            </p>
+          </div>
+        </article>
+        <article
+          class="grid grid-cols-[auto_1fr] items-start gap-fluid-8-16 rounded-fluid-16-32 border-fluid-2-5 border-solid border-onyx-900 p-fluid-8-24 shadow-lg shadow-onyx-600 dark:border-outer_space dark:bg-onyx dark:shadow-none"
+        >
+          <div class="self-center">
+            <img
+              class="h-auto w-fluid-48-112"
+              src="{% static 'images/icons/facilities/facility_personal-training.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="grid grid-rows-[auto_auto] gap-fluid-8-16">
+            <h4
+              class="text-fluid-h4 font-semibold leading-none text-jet dark:text-anti-flash_white"
+            >
+              Personal Training
+            </h4>
+            <p class="text-justify font-ubuntu text-fluid-12-24 font-light">
+              No matter your goals or abilities, our trainers will help unlock
+              and nurture your personal best.
+            </p>
+          </div>
+        </article>
       </div>
     </div>
   </div>
