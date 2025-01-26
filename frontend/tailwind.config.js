@@ -23,10 +23,10 @@ module.exports = {
 
         "fluid-p": "clamp(1rem, 0.8875rem + 0.5625vw, 1.5625rem)", //16px-25px
         "fluid-h1": "clamp(2.125rem, 0.725rem + 7vw, 9.125rem)", //34px-146px
-        "fluid-h2": "clamp(1rem, 0.5rem + 2.5vw, 3.5rem)", //16px-50px
-        "fluid-h3": "clamp(1.5rem, 1.3rem + 1vw, 2.5rem)", //24px-40px
-        "fluid-h4": "clamp(0.75rem, 0.45rem + 1.5vw, 2.25rem)", //12px-36px
-        "fluid-h5": "clamp()", //px-px
+        "fluid-h2": "clamp(2rem, 1.2rem + 4vw, 6rem)",
+        "fluid-h3": "clamp(1rem, 0.5rem + 2.5vw, 3.5rem)", //16px-50px
+        "fluid-h4": "clamp(1.5rem, 1.3rem + 1vw, 2.5rem)", //24px-40px
+        "fluid-h5": "clamp(0.75rem, 0.45rem + 1.5vw, 2.25rem)", //12px-36px
         "fluid-h6": "clamp()", //px-px
         "fluid-10-22": "clamp(0.625rem, 0.475rem + 0.75vw, 1.375rem)",
         "fluid-12-20": "clamp(0.75rem, 0.65rem + 0.5vw, 1.25rem)",
@@ -34,9 +34,9 @@ module.exports = {
         //screen >= 1920px <= 2560px:
 
         "fluid-wide-p": "clamp(1.5625rem, -1.25rem + 2.3438vw, 2.5rem)", //25px-40px
-        "fluid-wide-h2": "clamp()", //px-px
-        "fluid-wide-h3": "clamp(2.5rem, -0.5rem + 2.5vw, 3.5rem)", //40px-56px
-        "fluid-wide-h4": "clamp()", //px-px
+        "fluid-wide-h2": "clamp()",
+        "fluid-wide-h3": "clamp()", //px-px
+        "fluid-wide-h4": "clamp(2.5rem, -0.5rem + 2.5vw, 3.5rem)", //40px-56px
         "fluid-wide-h5": "clamp()", //px-px
         "fluid-wide-h6": "clamp()", //px-px
       },
@@ -90,15 +90,15 @@ module.exports = {
       colors: {
         aero: {
           DEFAULT: "#00c2df",
-          100: "#ccf3f9",
-          200: "#99e7f2",
-          300: "#66daec",
-          400: "#33cee5",
+          100: "#00272d",
+          200: "#004e5a",
+          300: "#007587",
+          400: "#009cb4",
           500: "#00c2df",
-          600: "#009bb2",
-          700: "#007486",
-          800: "#004e59",
-          900: "#00272d",
+          600: "#1be1ff",
+          700: "#54e8ff",
+          800: "#8df0ff",
+          900: "#c6f7ff",
         },
         "aero-opacity": {
           DEFAULT: "rgba(0, 194, 223, 1)", // #00c2df
@@ -114,15 +114,15 @@ module.exports = {
         },
         jet: {
           DEFAULT: "#313131",
-          100: "#d6d6d6",
-          200: "#adadad",
-          300: "#838383",
-          400: "#5a5a5a",
+          100: "#0a0a0a",
+          200: "#131313",
+          300: "#1d1d1d",
+          400: "#272727",
           500: "#313131",
-          600: "#272727",
-          700: "#1d1d1d",
-          800: "#141414",
-          900: "#0a0a0a",
+          600: "#5a5a5a",
+          700: "#838383",
+          800: "#acacac",
+          900: "#d6d6d6",
         },
         "jet-opacity": {
           DEFAULT: "rgba(49, 49, 49, 1)", // #313131
@@ -138,15 +138,15 @@ module.exports = {
         },
         "anti-flash_white": {
           DEFAULT: "#ececec",
-          100: "#fbfbfb",
-          200: "#f7f7f7",
-          300: "#f4f4f4",
-          400: "#f0f0f0",
+          100: "#2f2f2f",
+          200: "#5f5f5f",
+          300: "#8e8e8e",
+          400: "#bebebe",
           500: "#ececec",
-          600: "#bdbdbd",
-          700: "#8e8e8e",
-          800: "#5e5e5e",
-          900: "#2f2f2f",
+          600: "#f1f1f1",
+          700: "#f4f4f4",
+          800: "#f8f8f8",
+          900: "#fbfbfb",
         },
         "anti-flash_white-opacity": {
           DEFAULT: "rgba(236, 236, 236, 1)", // #ececec
@@ -312,7 +312,8 @@ module.exports = {
     plugin(function ({ addComponents, theme }) {
       addComponents({
         ".cta-btn": {
-          margin: theme("margin.fluid-13-48"),
+          marginTop: theme("margin.fluid-13-48"),
+          marginBottom: theme("margin.fluid-13-48"),
           display: "inline-block",
           padding: theme("padding.fluid-4-8_8-20"),
           borderRadius: "9999px",
