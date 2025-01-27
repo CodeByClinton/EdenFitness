@@ -1,5 +1,5 @@
 from django.shortcuts import render
-# from classes.models import GymClass
+from classes.models import GymClass
 # from trainers.models import Trainer
 # from partners.models import Partner
 # from .forms import ContactForm
@@ -10,7 +10,7 @@ from django.shortcuts import render
 # from django.conf import settings
 
 def home(request):
-    # classButtons = GymClass.objects.all()
+    classButtons = GymClass.objects.all()
     # trainers = Trainer.objects.all()
     # partners = Partner.objects.all()
     #
@@ -28,15 +28,14 @@ def home(request):
 
     # contact_form = ContactForm()
 
-    # context = {
-        # 'buttons': classButtons,
+    context = {
+        'buttons': classButtons,
         # 'trainers': trainers,
         # 'partners': partners,
         # 'contact_form': contact_form
-    # }
+    }
 
-    # return render(request, 'base.html', context)
-    return render(request, 'base.html')
+    return render(request, 'base.html', context)
 
 # class ContactFormView(APIView):
 #     def post(self, request):
