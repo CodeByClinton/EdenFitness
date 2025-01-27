@@ -50,10 +50,11 @@ module.exports = {
         "fluid-48-112": "clamp(3rem, 2.2rem + 4vw, 7rem)",
         //screen >= 1920px <= 2560px:
       },
-      // height: {
-      //   //screen >= 320px <= 1920px:
-      //   //screen >= 1920px <= 2560px:
-      // },
+      height: {
+        //screen >= 320px <= 1920px:
+        "fluid-12-36": "clamp(0.75rem, 0.45rem + 1.5vw, 2.25rem)",
+        //screen >= 1920px <= 2560px:
+      },
       margin: {
         "fluid-13-48": "clamp(0.8125rem, 0.5rem + 1.5625vw, 3rem)",
 
@@ -71,20 +72,19 @@ module.exports = {
         "fluid-8-24": "clamp(0.5rem, 0.3rem + 1vw, 1.5rem)", //INFO: Recheck
         //screen >= 1920px <= 2560px:
       },
-      borderWidth: {
-        //screen >= 320px <= 1920px:
-        "fluid-2-5": "clamp(0.125rem, 0.0875rem + 0.1875vw, 0.3125rem)", //INFO: Recheck
-        //screen >= 1920px <= 2560px:
-      },
+      // borderWidth: {
+      //   //screen >= 320px <= 1920px:
+      //   //screen >= 1920px <= 2560px:
+      // },
       borderRadius: {
         //screen >= 320px <= 1920px:
-        "fluid-16-32": "clamp(1rem, 0.8rem + 1vw, 2rem)", //INFO: Recheck
+        "fluid-16-32": "clamp(1rem, 0.8rem + 1vw, 2rem)",
         //screen >= 1920px <= 2560px:
       },
       gap: {
         //screen >= 320px <= 1920px:
-        "fluid-8-16": "clamp(0.5rem, 0.4rem + 0.5vw, 1rem)", //INFO: Recheck
-        "fluid-16-48": "clamp(1rem, 0.6rem + 2vw, 3rem)", //INFO: was 20-54
+        "fluid-8-16": "clamp(0.5rem, 0.4rem + 0.5vw, 1rem)",
+        "fluid-16-48": "clamp(1rem, 0.6rem + 2vw, 3rem)",
         //screen >= 1920px <= 2560px:
       },
       colors: {
